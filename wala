@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+-- 😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃😝😃 --
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("ImageLabel")
@@ -12,6 +9,8 @@ local btn2 = Instance.new("TextButton")
 local btn3 = Instance.new("TextButton")
 local btn4 = Instance.new("TextButton")
 local btn5 = Instance.new("TextButton")
+local txt2 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
 
 --Properties:
 
@@ -22,8 +21,8 @@ Main.Name = "Main"
 Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
-Main.Position = UDim2.new(0.196640313, 0, 0.132038832, 0)
-Main.Size = UDim2.new(0, 273, 0, 387)
+Main.Position = UDim2.new(0.3646245, 0, 0.0660194159, 0)
+Main.Size = UDim2.new(0, 273, 0, 447)
 Main.Image = "rbxassetid://3570695787"
 Main.ImageColor3 = Color3.fromRGB(35, 35, 35)
 Main.ScaleType = Enum.ScaleType.Slice
@@ -58,7 +57,7 @@ btn1.Name = "btn1"
 btn1.Parent = Main
 btn1.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 btn1.BorderSizePixel = 0
-btn1.Position = UDim2.new(0.186813191, 0, 0.154480189, 0)
+btn1.Position = UDim2.new(0.186813191, 0, 0.125397414, 0)
 btn1.Size = UDim2.new(0, 171, 0, 40)
 btn1.Font = Enum.Font.SourceSansBold
 btn1.Text = "GS21 Crash"
@@ -71,7 +70,7 @@ btn2.Name = "btn2"
 btn2.Parent = Main
 btn2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 btn2.BorderSizePixel = 0
-btn2.Position = UDim2.new(0.186813191, 0, 0.312615395, 0)
+btn2.Position = UDim2.new(0.186813191, 0, 0.274584085, 0)
 btn2.Size = UDim2.new(0, 171, 0, 40)
 btn2.Font = Enum.Font.SourceSansBold
 btn2.Text = "Map Destroy"
@@ -84,7 +83,7 @@ btn3.Name = "btn3"
 btn3.Parent = Main
 btn3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 btn3.BorderSizePixel = 0
-btn3.Position = UDim2.new(0.186813191, 0, 0.481461495, 0)
+btn3.Position = UDim2.new(0.186813191, 0, 0.427770227, 0)
 btn3.Size = UDim2.new(0, 171, 0, 40)
 btn3.Font = Enum.Font.SourceSansBold
 btn3.Text = "Money Counter"
@@ -97,7 +96,7 @@ btn4.Name = "btn4"
 btn4.Parent = Main
 btn4.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 btn4.BorderSizePixel = 0
-btn4.Position = UDim2.new(0.186813191, 0, 0.644252181, 0)
+btn4.Position = UDim2.new(0.186813191, 0, 0.570426702, 0)
 btn4.Size = UDim2.new(0, 171, 0, 40)
 btn4.Font = Enum.Font.SourceSansBold
 btn4.Text = "Player Anchor"
@@ -110,7 +109,7 @@ btn5.Name = "btn5"
 btn5.Parent = Main
 btn5.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 btn5.BorderSizePixel = 0
-btn5.Position = UDim2.new(0.186813191, 0, 0.807042897, 0)
+btn5.Position = UDim2.new(0.186813191, 0, 0.724268854, 0)
 btn5.Size = UDim2.new(0, 171, 0, 40)
 btn5.Font = Enum.Font.SourceSansBold
 btn5.Text = "Player Unanchor"
@@ -118,6 +117,35 @@ btn5.TextColor3 = Color3.fromRGB(255, 255, 255)
 btn5.TextScaled = true
 btn5.TextSize = 14.000
 btn5.TextWrapped = true
+
+txt2.Name = "txt2"
+txt2.Parent = Main
+txt2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+txt2.BackgroundTransparency = 1.000
+txt2.Position = UDim2.new(0, 0, 0.843400419, 0)
+txt2.Size = UDim2.new(0, 273, 0, 21)
+txt2.Font = Enum.Font.SourceSansBold
+txt2.Text = "Crash Amount"
+txt2.TextColor3 = Color3.fromRGB(255, 255, 255)
+txt2.TextScaled = true
+txt2.TextSize = 14.000
+txt2.TextWrapped = true
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.186813191, 0, 0.90380317, 0)
+TextBox.Size = UDim2.new(0, 166, 0, 35)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderText = "Amount Default: 1500"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+local amount = TextBox.Text
 
 btn2.MouseButton1Down:Connect(function()
 	local pp = game.Workspace["Ignored"]
@@ -131,7 +159,7 @@ end)
 
 btn1.MouseButton1Down:Connect(function()
 	getgenv().Active = true --Toggle true or false
-	getgenv().CrashAmmount = 1500 --The more you add the better
+	getgenv().CrashAmmount = amount --The more you add the better
 --[[ Theres a chance that the crash fails, if that happends just re execute and
      add more to CrashAmmount
       Requirements:
@@ -155,7 +183,7 @@ end)
 
 -- Scripts:
 
-local function BIWYE_fake_script() -- Main.OMGANTICHEAT 
+local function AOBLY_fake_script() -- Main.wew 
 	local script = Instance.new('LocalScript', Main)
 
 	frame = script.Parent
@@ -165,9 +193,9 @@ local function BIWYE_fake_script() -- Main.OMGANTICHEAT
 	
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "Loaded!";
-		Text = "Enjoy Made By Zonoxy#0003!";
+		Text = "Enjoy Made By Zonoxy#00039 Credit To GS21!";
 		Duration = 10;
 	})
 	
 end
-coroutine.wrap(BIWYE_fake_script)()
+coroutine.wrap(AOBLY_fake_script)()
