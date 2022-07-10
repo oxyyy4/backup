@@ -107,6 +107,15 @@ btn2.MouseButton1Down:Connect(function()
 		Duration = 10;
 	})
 	-- Swag Mode Fly lmao --
+	wait(5)
+	if not game:IsLoaded() then
+	game.Loaded:Wait()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Warning!";
+		Text = "Just Wait 5 Sec";
+		Duration = 5;
+	})
+	end
 	FLYMODE = 'Default'
 	FLYSPEED = lol
 	if FLYMODE == 'Default' then
