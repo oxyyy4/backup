@@ -33,7 +33,7 @@ Cylind.Transparency = 0.3
 Cylind.Parent = game.Workspace	
 Cylind.Shape = _G.blockyes.Ball
 Cylind.Size = Vector3.new(3, 3, 3)
-Cylind.Color = Color3.fromRGB(17, 200, 255)
+Cylind.Color = Color3.fromRGB(90, 90, 90)
 
 
 function makemarker(Parent, Adornee, Color, Size, Size2)
