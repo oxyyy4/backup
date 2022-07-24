@@ -1,3 +1,5 @@
+-- Modifed By NoxyL#0001
+
 repeat
 	wait()
 until game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR")
